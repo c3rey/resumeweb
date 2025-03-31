@@ -1,0 +1,106 @@
+@import url("https://fonts.google.com/specimen/Barlow+Condensed")
+
+:root {
+    --main-bg-color: #f5f5f5;
+    --text-color: #333333;
+    --accent-color: #55cbfa;
+    --section-bg: #ffffff;
+}
+
+
+body {
+    font-family: 'Barlow Condensed', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header-text {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+#projects {
+    margin: 2rem 0;
+}
+
+#shadow-mon {
+    margin-bottom: 2rem;
+}
+
+.project-description {
+    margin: 1rem 0;
+}
+
+#languages {
+    padding: 2rem;
+}
+
+
+#cursor {
+    animation: blink 1s steps(2) infinite;
+
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+    font-weight: normal;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: -1rem;
+    color: var(--accent-color);
+}
