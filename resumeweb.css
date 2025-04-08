@@ -24,24 +24,30 @@ main {
 }
 
 .header-text {
-    text-align: left;
-    margin-bottom: 3rem;
+  text-align: left;
+  display: inline-block;
+  padding-inline: 8px;
+}
+span.header-text {
+  font-size: 2rem;
+}
+
+
+.project-description {
+    margin: 1rem 0;
 }
 
 
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
     color: var(--text-color);
 }
 
 h2 {
     color: var(--accent-color);
     font-size: 2rem;
-    margin-bottom: 1.5rem;
 }
-
 
 
 #projects {
@@ -52,9 +58,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.project-description {
-    margin: 1rem 0;
-}
+
 
 #languages {
     padding: 2rem;
@@ -63,12 +67,12 @@ h2 {
 
 #cursor {
     animation: blink 1s steps(2) infinite;
-
+    display: inline-block;
 }
 
 @keyframes blink {
-    0%, 100% {opacity: 1;}
-    100% {opacity: 0;}
+    0%, 100% {display: inline-block;}
+    50% {display: none;}
 }
 
 
